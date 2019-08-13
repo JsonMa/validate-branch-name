@@ -2,13 +2,13 @@
 
 const branchName = require('current-git-branch');
 const {
-  getConfig,
+  getConf,
 } = require('./lib/getConfig');
 
 const {
   pattern,
   errorMsg,
-} = getConfig();
+} = getConf();
 
 // validate whether it is a git repository
 if (!branchName()) {
@@ -18,7 +18,7 @@ if (!branchName()) {
 }
 
 try {
-  const validBranchNameRegExp = new RegExp(pkg['validate-branch-name'] && pkg['validate-branch-name'].pattern || pattern, 'g');
+  const validBranchNameRegExp = new RegExp(pattern, 'g');
   if (validBranchNameRegExp.test(branchName())) {
     process.exitCode = 0;
   } else {
