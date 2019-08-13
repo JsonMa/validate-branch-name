@@ -1,0 +1,17 @@
+{
+  "extends": "eslint-config-egg",
+  "rules": {
+    "class-methods-use-this": "off",
+    "valid-jsdoc": "error",
+    "require-jsdoc": ["error", {
+      "require": {
+        "FunctionDeclaration": true,
+        "MethodDefinition": true,
+        "ClassDeclaration": true,
+        "ArrowFunctionExpression": false
+      }
+    }],
+    "no-underscore-dangle": "off",
+    "array-bracket-spacing": "off"
+  }
+}

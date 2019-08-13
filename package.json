@@ -1,0 +1,38 @@
+{
+  "name": "validate-branch-name",
+  "version": "1.0.0",
+  "description": "Git branch validator",
+  "main": "index.js",
+  "scripts": {
+    "ci": "npm run lint && npm run cov",
+    "test-local": "npm test",
+    "test": "npm run lint -- --fix && egg-bin pkgfiles && npm run test-local",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JsonMa/validate-branch-name.git"
+  },
+  "keywords": [
+    "branch-name",
+    "validate-branch-name",
+    "branch",
+    "name"
+  ],
+  "author": "jsonma",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JsonMa/validate-branch-name/issues"
+  },
+  "homepage": "https://github.com/JsonMa/validate-branch-name#readme",
+  "dependencies": {
+    "cosmiconfig": "^5.2.1",
+    "current-git-branch": "^1.1.0",
+    "read-pkg": "^5.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.1.0",
+    "eslint-config-egg": "^7.4.1",
+    "eslint-plugin-import": "^2.18.2"
+  }
+}
