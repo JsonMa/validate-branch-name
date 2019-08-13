@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Git branch validator",
   "main": "index.js",
+  "bin": {
+    "validate-branch-name": "./index.js"
+  },
   "scripts": {
     "ci": "npm run lint && npm run cov",
     "test-local": "npm test",
