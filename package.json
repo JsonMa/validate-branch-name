@@ -10,7 +10,7 @@
     "check-coverage": "istanbul check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
     "test": "istanbul cover -x test/**/*.test.js node_modules/mocha/bin/_mocha -- -R spec test/**/*.test.js",
     "lint": "eslint . --fix",
-    "ci": "npm run lint && npm run test && npm run check-coverage"
+    "ci": "npm run lint && npm run test && npm run check-coverage && codecov"
   },
   "repository": {
     "type": "git",
