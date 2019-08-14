@@ -1,5 +1,18 @@
 # validate-branch-name
 
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/JsonMa/validate-branch-name/blob/master/LICENSE)
+[![npm version](https://img.shields.io/npm/v/validate-branch-name.svg?style=flat)](https://www.npmjs.com/package/validate-branch-name)
+[![Build Status](https://www.travis-ci.org/JsonMa/validate-branch-name.svg?branch=master)](https://www.travis-ci.org/JsonMa/validate-branch-name)
+[![codecov](https://codecov.io/gh/JsonMa/validate-branch-name/branch/master/graph/badge.svg)](https://codecov.io/gh/JsonMa/validate-branch-name)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/JsonMa/validate-branch-name/pulls)
+[![Known Vulnerabilities][snyk-image]][snyk-url]
+[![npm download][download-image]][download-url]
+
+[snyk-image]: https://snyk.io/test/npm/validate-branch-name/badge.svg?style=flat-square
+[snyk-url]: https://snyk.io/test/npm/validate-branch-name
+[download-image]: https://img.shields.io/npm/dm/validate-branch-name.svg?style=flat-square
+[download-url]: https://npmjs.org/package/validate-branch-name
+
 Git branch name validator through hooks.
 
 ## Description

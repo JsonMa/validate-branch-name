@@ -9,5 +9,6 @@ cache:
     - "node_modules"
 install:
   - npm i npminstall && npminstall
+  - npm install -g codecov
 script:
   - npm run ci
