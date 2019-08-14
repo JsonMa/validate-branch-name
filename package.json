@@ -1,6 +1,6 @@
 {
   "name": "validate-branch-name",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Git branch validator",
   "main": "index.js",
   "bin": {
@@ -17,10 +17,15 @@
     "url": "git+https://github.com/JsonMa/validate-branch-name.git"
   },
   "keywords": [
-    "branch-name",
     "validate-branch-name",
+    "branch-name",
     "branch",
-    "name"
+    "hook",
+    "git",
+    "git hook",
+    "branch name",
+    "pre push",
+    "git push"
   ],
   "author": "jsonma",
   "license": "MIT",
