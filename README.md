@@ -31,13 +31,13 @@ $ npm i validate-branch-name --save-dev
     }
   },
   "validate-branch-name": {
-    "pattern": "^master|develop|(feature|fix|hotfix|release)\/.+",
+    "pattern": "^(master|develop){1}$|^(feature|fix|hotfix|release)\/.+$",
     "errorMsg": "your own error message"
   }
 }
 ```
 
-**Default pattern: ^master|develop|(feature|fix|hotfix|release)\/.+**
+**Default pattern: ^(master|develop){1}$|^(feature|fix|hotfix|release)\/.+$**
 
 **Example: feature/test/pattern-test**
 
