@@ -1,6 +1,6 @@
 'use strict';
 
 module.exports = {
-  pattern: '^master|develop|(feature|fix|hotfix|release)\/.+',
-  errorMsg: 'Branch validation failed',
+  pattern: '^(master|develop){1}$|^(feature|fix|hotfix|release)\/.+$',
+  errorMsg: 'Branch name validate failed please rename your current branch',
 };
