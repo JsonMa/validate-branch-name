@@ -13,7 +13,7 @@ const FAILED_CODE = 1;
 // validate whether it is a git repository
 if (!currentBranchName) {
   console.error('\x1b[31m%s\x1b[0m', 'Error: not a git repository\n');
-  process.exitCode = 1;
+  process.exitCode = FAILED_CODE;
   return;
 }
 try {
