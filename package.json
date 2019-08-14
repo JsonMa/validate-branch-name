@@ -1,16 +1,16 @@
 {
   "name": "validate-branch-name",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Git branch validator",
   "main": "index.js",
   "bin": {
     "validate-branch-name": "./index.js"
   },
   "scripts": {
-    "ci": "npm run lint && npm run cov",
-    "test-local": "npm test",
-    "test": "npm run lint --fix && npm run test-local",
-    "lint": "eslint ."
+    "check-coverage": "istanbul check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
+    "test": "istanbul cover -x test/**/*.test.js node_modules/mocha/bin/_mocha -- -R spec test/**/*.test.js",
+    "lint": "eslint . --fix",
+    "ci": "npm run lint && npm run test && npm run check-coverage"
   },
   "repository": {
     "type": "git",
@@ -35,12 +35,14 @@
   "homepage": "https://github.com/JsonMa/validate-branch-name#readme",
   "dependencies": {
     "cosmiconfig": "^5.2.1",
-    "current-git-branch": "^1.1.0",
-    "read-pkg": "^5.2.0"
+    "current-git-branch": "^1.1.0"
   },
   "devDependencies": {
+    "chai": "^4.2.0",
     "eslint": "^6.1.0",
     "eslint-config-egg": "^7.4.1",
-    "eslint-plugin-import": "^2.18.2"
+    "eslint-plugin-import": "^2.18.2",
+    "istanbul": "^0.4.5",
+    "mocha": "^6.2.0"
   }
 }
