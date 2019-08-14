@@ -2,3 +2,4 @@ logs/
 node_modules/
 coverage/
 .idea/
+.vscode/

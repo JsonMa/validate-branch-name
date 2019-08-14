@@ -18,7 +18,7 @@ $ npm i validate-branch-name --save-dev
 
 ## Usage
 
-### Configure hooks and pattern using package.json.
+**Configure hooks and pattern using package.json.**
 
 "validate-branch-name" attribute in package.json is optional, we have set default pattern and errorMsg in project. But you can still defined them as you like.
 
