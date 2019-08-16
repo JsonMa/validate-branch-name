@@ -17,7 +17,7 @@ Git branch name validator through hooks.
 
 ## Description
 
-**validate-branch-name** is based on [Husky](https://github.com/typicode/husky), so make sure that your repository have installed husky (**version newer than v1.0.0**) successfully.
+**validate-branch-name** is based on [Husky](https://github.com/typicode/husky), so make sure that your repository have installed husky (**version >= v1.0.0**) successfully.
 
 <!--
 Description here.
@@ -52,7 +52,7 @@ $ npm i validate-branch-name --save-dev
 
 **Default pattern: ^(master|develop){1}$|^(feature|fix|hotfix|release)\/.+$**
 
-**Example: feature/test/pattern-test**
+**Example:** `feature/test/pattern-test` would be passed.
 
 **Avaliable patterns:**
 
@@ -67,7 +67,7 @@ $ npm i validate-branch-name --save-dev
 ## Requirements
 
 1. Husky requires Node `>= 8.6.0` and Git `>= 2.13.2`
-2. Husky version should be newer than 1.0.0
+2. Husky version `>=  1.0.0`
 
 ## Questions & Suggestions
 
