@@ -1,6 +1,6 @@
 {
   "name": "validate-branch-name",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Git branch validator",
   "main": "index.js",
   "bin": {
