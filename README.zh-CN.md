@@ -16,27 +16,27 @@
 [download-image]: https://img.shields.io/npm/dm/validate-branch-name.svg?style=flat-square
 [download-url]: https://npmjs.org/package/validate-branch-name
 
-Git branch name validator through hooks.
+Git分支名校验工具，规范项目的分支命令。
 
-## Description
+## 描述
 
-**validate-branch-name** is based on [Husky](https://github.com/typicode/husky), so make sure that your repository have installed husky (**version >= v1.0.0**) successfully.
+**validate-branch-name** 依赖了 [Husky](https://github.com/typicode/husky), 因此在使用前需要确保你已经安装好了[Husky](https://github.com/typicode/husky)且版本号 **>= v1.0.0**.
 
 <!--
 Description here.
 -->
 
-## Install
+## 安装
 
 ```bash
 $ npm i validate-branch-name --save-dev
 ```
 
-## Usage
+## 使用
 
-**Configure hooks and pattern using package.json.**
+**在根目录下的package.json文件中，增加husky及validate-branch-name的配置**
 
-"validate-branch-name" attribute in package.json is optional, we have set default pattern and errorMsg in project. But you can still defined them as you like.
+其中，"validate-branch-name"的属性是可选的，在工具中我们已经为您添加了默认的配置，但是您依然可以根据自己的喜好自定义校验规则和错误信息。
 
 ```js
 // {app_root}/package.json
@@ -48,34 +48,34 @@ $ npm i validate-branch-name --save-dev
   },
   "validate-branch-name": {
     "pattern": "^(master|develop){1}$|^(feature|fix|hotfix|release)\/.+$",
-    "errorMsg": "your own error message"
+    "errorMsg": "自定义的错误信息"
   }
 }
 ```
 
-**Default pattern: ^(master|develop){1}$|^(feature|fix|hotfix|release)\/.+$**
+**默认的校验规则: ^(master|develop){1}$ |^(feature|fix|hotfix|release)\/.+$**
 
-**Example:** `feature/test/pattern-test` would be passed.
+**例子:** 分支名`feature/test/pattern-test`将会通过校验 .
 
-**Avaliable patterns:**
+**可选择的校验规则:**
 
-- ^(feature|fix|hotfix|release)\/.+ - branch has to start with _feature/, fix/, release/ or hotfix/_
+- ^(feature|fix|hotfix|release)\/.+ -- 分支名应该以 _feature/, fix/, release/_ 或 _hotfix/_ 开始
 
-* (feature|release|hotfix)\/(JIRA-\d+) - it should look like _feature/JIRA-1234_
+* (feature|release|hotfix)\/(JIRA-\d+) -- 分支名应当例如 _feature/JIRA-1234_
 
-- (feature|release|hotfix)\/(JIRA-\d+\/)?[a-z-]+ - it should look like _feature/branch-name_ or include JIRA's code like _feature/JIRA-1234/branch-name_
+- (feature|release|hotfix)\/(JIRA-\d+\/)?[a-z-]+ -- 分支名应当例如 _feature/branch-name_ 或者 _feature/JIRA-1234/branch-name_
 
-**You can also configure hooks and pattern using `.validate-branch-namerc`, `.validate-branch-namerc.json` or `.validate-branch-name.js` file.**
+**除了在package.json中定义，还能以文件 `.validate-branch-namerc`、`.validate-branch-namerc.json` 或 `.validate-branch-name.js` 的形式配置validate-branch-name。**
 
-## Requirements
+## 依赖
 
-1. Husky requires Node `>= 8.6.0` and Git `>= 2.13.2`
-2. Husky version `>=  1.0.0`
+1. Husky 依赖的 Node 版本`>= 8.6.0` 以及 Git 版本 `>= 2.13.2`
+2. Husky 版本 `>=  1.0.0`
 
-## Questions & Suggestions
+## 疑问及建议
 
-Please open an issue [here](https://github.com/JsonMa/validate-branch-name/issues).
+请通过[issue](https://github.com/JsonMa/validate-branch-name/issues)进行提问。
 
-## License
+## 证书
 
 [MIT](LICENSE)
