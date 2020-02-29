@@ -65,7 +65,7 @@ $ npm i validate-branch-name --save-dev
 
 - (feature|release|hotfix)\/(JIRA-\d+\/)?[a-z-]+ - it should look like _feature/branch-name_ or include JIRA's code like _feature/JIRA-1234/branch-name_
 
-**You can also configure hooks and pattern using `.validate-branch-namerc`, `.validate-branch-namerc.json` or `.validate-branch-name.js` file.**
+**You can also configure hooks and pattern using `.validate-branch-namerc`, `.validate-branch-namerc.json` or `.validate-branch-namerc.js` file.**
 
 ## Requirements
 
