@@ -1,6 +1,10 @@
 # validate-branch-name
 
-![validate-branch-name](https://socialify.git.ci/JsonMa/validate-branch-name/image?description=1&forks=1&issues=1&language=1&owner=1&pattern=Circuit%20Board&pulls=1&stargazers=1&theme=Light)
+<p align="center">
+  <a href="https://nextjs.org">
+    <img src="https://github.com/JsonMa/validate-branch-name/blob/master/logo_transparent.png?raw=true" height="450px" style="margin: -150px 0">
+  </a>
+</p>
 
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/JsonMa/validate-branch-name/blob/master/LICENSE)
 [![npm version](https://img.shields.io/npm/v/validate-branch-name.svg?style=flat)](https://www.npmjs.com/package/validate-branch-name)
