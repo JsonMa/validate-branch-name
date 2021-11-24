@@ -18,6 +18,7 @@
 [snyk-url]: https://snyk.io/test/npm/validate-branch-name
 [download-image]: https://img.shields.io/npm/dm/validate-branch-name.svg?style=flat-square
 [download-url]: https://npmjs.org/package/validate-branch-name
+![npm](https://img.shields.io/npm/dt/validate-branch-name)
 
 [English Document](https://github.com/JsonMa/validate-branch-name/blob/master/README.md)
 
