@@ -25,7 +25,7 @@ Git分支名校验工具，规范项目的分支命令。
 
 ## 描述
 
-**validate-branch-name** 依赖了 [Husky](https://github.com/typicode/husky), 因此在使用前需要确保你已经安装好了[Husky](https://github.com/typicode/husky)且版本号 **>= v1.0.0**.
+**validate-branch-name** 可通过命令行直接使用。当结合 [Husky](https://github.com/typicode/husky)一起使用时，请确保Husky的版本 **>= v1.0.0**.
 
 <!--
 Description here.
@@ -35,20 +35,28 @@ Description here.
 
 ```bash
 $ npm i validate-branch-name --save-dev
+
 ```
 
 ## 使用
 
-**在根目录下的package.json文件中，增加husky及validate-branch-name的配置**
+**命令行方式使用**
+```shell
 
-其中，"validate-branch-name"的属性是可选的，在工具中我们已经为您添加了默认的配置，但是您依然可以根据自己的喜好自定义校验规则和错误信息。
+npx validate-branch-name
+
+```
+
+**结合husky使用**
+
+方式一：在根目录下的package.json文件中，配置husky及validate-branch-name。
 
 ```js
 // {app_root}/package.json
 {
   "husky": {
     "hooks": {
-      "pre-push": "validate-branch-name"
+      "pre-commit": "validate-branch-name"
     }
   },
   "validate-branch-name": {
@@ -57,6 +65,20 @@ $ npm i validate-branch-name --save-dev
   }
 }
 ```
+
+方式二：在`.husky`目录下增加[pre-commit](https://github.com/JsonMa/validate-branch-name/blob/master/example/pre-commit) ，配合husky git钩子来校验分支名。
+
+```json
+
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+# valite branch name before commit
+
+npx validate-branch-name 
+
+```
+**我们已经为您添加了默认的配置，但是您依然可以根据自己的喜好自定义校验规则和错误信息。**
 
 **默认的校验规则: ^(master|develop){1}$ |^(feature|fix|hotfix|release)\/.+$**
 
@@ -72,10 +94,6 @@ $ npm i validate-branch-name --save-dev
 
 **除了在package.json中定义，还能以文件 `.validate-branch-namerc`、`.validate-branch-namerc.json` 或 `.validate-branch-name.js` 的形式配置validate-branch-name。**
 
-## 依赖
-
-1. Husky 依赖的 Node 版本`>= 8.6.0` 以及 Git 版本 `>= 2.13.2`
-2. Husky 版本 `>=  1.0.0`
 
 ## 疑问及建议
 

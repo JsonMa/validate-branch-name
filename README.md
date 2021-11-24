@@ -21,11 +21,11 @@
 
 [中文文档](https://github.com/JsonMa/validate-branch-name/blob/master/README.zh-CN.md)
 
-Git branch name validator through hooks.
+Git branch name validator.
 
 ## Description
 
-**validate-branch-name** is based on [Husky](https://github.com/typicode/husky), so make sure that your repository have installed husky (**version >= v1.0.0**) successfully.
+**validate-branch-name** can be used through command line directly. When used with [Husky](https://github.com/typicode/husky), you should make sure husky version >= v1.0.0.
 
 <!--
 Description here.
@@ -35,20 +35,31 @@ Description here.
 
 ```bash
 $ npm i validate-branch-name --save-dev
+
 ```
 
 ## Usage
 
-**Configure hooks and pattern using package.json.**
+**Use through command line**
 
-"validate-branch-name" attribute in package.json is optional, we have set default pattern and errorMsg in project. But you can still defined them as you like.
+```shell
+
+npx validate-branch-name
+
+```
+
+**Use with husky**
+
+**First way:**
+
+Configure hooks and pattern using package.json.
 
 ```js
 // {app_root}/package.json
 {
   "husky": {
     "hooks": {
-      "pre-push": "validate-branch-name"
+      "pre-commit": "validate-branch-name"
     }
   },
   "validate-branch-name": {
@@ -57,6 +68,23 @@ $ npm i validate-branch-name --save-dev
   }
 }
 ```
+
+**Second way:**
+
+Define [pre-commit](https://github.com/JsonMa/validate-branch-name/blob/master/example/pre-commit) file under `.husky` direcotory.
+
+```json
+
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+# valite branch name before commit
+
+npx validate-branch-name 
+
+```
+
+**We have set pattern and errorMsg by default。But you can still defined them as you like.**
 
 **Default pattern: ^(master|develop){1}$|^(feature|fix|hotfix|release)\/.+$**
 
@@ -70,12 +98,8 @@ $ npm i validate-branch-name --save-dev
 
 - (feature|release|hotfix)\/(JIRA-\d+\/)?[a-z-]+ - it should look like _feature/branch-name_ or include JIRA's code like _feature/JIRA-1234/branch-name_
 
-**You can also configure hooks and pattern using `.validate-branch-namerc`, `.validate-branch-namerc.json` or `.validate-branch-namerc.js` file.**
+**You can also use `.validate-branch-namerc`, `.validate-branch-namerc.json` or `.validate-branch-namerc.js` file to define config.**
 
-## Requirements
-
-1. Husky requires Node `>= 8.6.0` and Git `>= 2.13.2`
-2. Husky version `>=  1.0.0`
 
 ## Questions & Suggestions
 
