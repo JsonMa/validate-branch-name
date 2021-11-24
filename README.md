@@ -25,7 +25,7 @@ Git branch name validator.
 
 ## Description
 
-**validate-branch-name** can be used through command line directly. When used with [Husky](https://github.com/typicode/husky), you should make sure husky version >= v1.0.0.
+**validate-branch-name** can be used through command line directly. When using with [Husky](https://github.com/typicode/husky), you should make sure husky version >= v1.0.0.
 
 <!--
 Description here.
@@ -73,7 +73,7 @@ Configure hooks and pattern using package.json.
 
 Define [pre-commit](https://github.com/JsonMa/validate-branch-name/blob/master/example/pre-commit) file under `.husky` direcotory.
 
-```json
+```shell
 
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"

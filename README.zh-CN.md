@@ -68,7 +68,7 @@ npx validate-branch-name
 
 方式二：在`.husky`目录下增加[pre-commit](https://github.com/JsonMa/validate-branch-name/blob/master/example/pre-commit) ，配合husky git钩子来校验分支名。
 
-```json
+```shell
 
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
