@@ -1,0 +1,5 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+# Git validate branch name when pre commit
+npx validate-branch-name 
