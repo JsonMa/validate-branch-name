@@ -4,11 +4,11 @@
   "description": "Git branch validator",
   "main": "index.js",
   "bin": {
-    "validate-branch-name": "./index.js"
+    "validate-branch-name": "cli.js"
   },
   "scripts": {
     "check-coverage": "istanbul check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
-    "test": "istanbul cover -x test/**/*.test.js node_modules/mocha/bin/_mocha -- -R spec test/**/*.test.js",
+    "test": "npm link && istanbul cover -x test/**/*.test.js node_modules/mocha/bin/_mocha -- -R spec test/**/*.test.js",
     "lint": "eslint . --fix",
     "ci": "npm run lint && npm run test && npm run check-coverage && codecov"
   },
@@ -35,6 +35,7 @@
   },
   "homepage": "https://github.com/JsonMa/validate-branch-name#readme",
   "dependencies": {
+    "commander": "^8.3.0",
     "cosmiconfig": "^5.2.1",
     "current-git-branch": "^1.1.0"
   },
