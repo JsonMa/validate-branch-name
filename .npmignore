@@ -1,0 +1,6 @@
+/example
+/test
+.travis.yml
+.eslintrc
+.editorconfig
+.eslintignore
