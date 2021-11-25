@@ -35,8 +35,19 @@ Description here.
 
 ## 安装
 
-```bash
-$ npm i validate-branch-name --save-dev
+
+```shell
+
+npx validate-branch-name
+
+# test target branch name
+npx validate-branch-name -t test/branch/name
+
+# define regexp to test branch name
+npx validate-branch-name -r regexp -t test/branch/name
+
+# use -h for more usage detail
+npx validate-branch-name -h
 
 ```
 
