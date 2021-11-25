@@ -98,7 +98,7 @@ npx validate-branch-name
 
 ```
 
-**We have set pattern and errorMsg by default。But you can still defined them as you like.**
+**We have set pattern and errorMsg by default, but you can still defined them as you like.**
 
 **Default pattern: ^(master|develop){1}$|^(feature|fix|hotfix|release)\/.+$**
 
