@@ -1,3 +1,18 @@
+## [1.1.1](https://github.com/JsonMa/validate-branch-name/compare/v1.1.0...v1.1.1) (2021-11-25)
+
+
+### Bug Fixes
+
+* :bug: fix useless console log ([f23fb87](https://github.com/JsonMa/validate-branch-name/commit/f23fb87242e537ef1763f6910118286324e2f226))
+
+
+### Features
+
+* :bookmark: release v1.1.0 ([c8df179](https://github.com/JsonMa/validate-branch-name/commit/c8df1796c519d4ce316fd692bcb0d297d742384a))
+* add change log to project ([0944421](https://github.com/JsonMa/validate-branch-name/commit/0944421f955a35b313b36715c597c168ae902354))
+
+
+
 # [1.1.0](https://github.com/JsonMa/validate-branch-name/compare/v1.0.6...v1.1.0) (2021-11-25)
 
 
@@ -8,6 +23,8 @@
 * add husky pre-commit example ([b1a5a10](https://github.com/JsonMa/validate-branch-name/commit/b1a5a1095d4bca24502db67bf6af3a1e38399893))
 * add json config example ([9207f9c](https://github.com/JsonMa/validate-branch-name/commit/9207f9c4dc3c5a8b94c3d72a5e19a48e79d45d9a))
 * add logo to project ([b7f36db](https://github.com/JsonMa/validate-branch-name/commit/b7f36dbeadf82e8700bcd5e00ac9d8654a26d1a5))
+* add logo to readme ([4f8da80](https://github.com/JsonMa/validate-branch-name/commit/4f8da805b8418228d0f1bbd5809d288c9af7a106))
+* add transparent logo ([a36da44](https://github.com/JsonMa/validate-branch-name/commit/a36da44d2d35d0bafc51c16568b2500d4ad90eed))
 
 
 
