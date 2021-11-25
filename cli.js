@@ -11,12 +11,6 @@ const {
 const currentBranchName = branchName();
 const SUCCESS_CODE = 0;
 const FAILED_CODE = 1;
-// const REGEXP = [
-//   '^(master|develop){1}$|^(feature|fix|hotfix|release)\/.+$',
-//   '(feature|release|hotfix)\/(JIRA-\d+',
-//   '(feature|release|hotfix)\/(JIRA-\d+\/)?[a-z-]+',
-//   '^(feature|fix|hotfix|release)\/.+',
-// ];
 const pkgJson = require(path.join(__dirname, './package.json'));
 const program = new Command();
 program.description('Git branch name validate tool');
@@ -35,7 +29,6 @@ if (!options.branch && !currentBranchName) {
   return;
 }
 try {
-  console.log(options.regexp);
   const result = validateBranchName(branch, options.regexp);
   process.exitCode = result ? SUCCESS_CODE : FAILED_CODE;
 } catch (error) {
