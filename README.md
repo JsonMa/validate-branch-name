@@ -112,6 +112,8 @@ npx validate-branch-name
 
 - (feature|release|hotfix)\/(JIRA-\d+\/)?[a-z-]+ - it should look like _feature/branch-name_ or include JIRA's code like _feature/JIRA-1234/branch-name_
 
+- custom patterns, visit [regex](https://extendsclass.com/regex/a3fe16a).
+
 **You can also use `.validate-branch-namerc`, `.validate-branch-namerc.json` or `.validate-branch-namerc.js` file to define config.**
 
 

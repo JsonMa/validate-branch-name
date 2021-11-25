@@ -108,6 +108,8 @@ npx validate-branch-name
 
 - (feature|release|hotfix)\/(JIRA-\d+\/)?[a-z-]+ -- 分支名应当例如 _feature/branch-name_ 或者 _feature/JIRA-1234/branch-name_
 
+- 自定义正则表达式，访问[regex](https://extendsclass.com/regex/a3fe16a)。
+
 **除了在package.json中定义，还能以文件 `.validate-branch-namerc`、`.validate-branch-namerc.json` 或 `.validate-branch-name.js` 的形式配置validate-branch-name。**
 
 
