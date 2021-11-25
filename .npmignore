@@ -1,6 +1,8 @@
-/example
-/test
+example
+test
 .travis.yml
 .eslintrc
 .editorconfig
 .eslintignore
+.vscode
+coverage

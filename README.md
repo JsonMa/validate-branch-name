@@ -35,7 +35,11 @@ Description here.
 ## Install
 
 ```bash
-$ npm i validate-branch-name --save-dev
+# local install
+$ npm i validate-branch-name -D
+
+# global install
+$ npm i validate-branch-name -g
 
 ```
 
@@ -69,7 +73,7 @@ Configure hooks and pattern using package.json.
 {
   "husky": {
     "hooks": {
-      "pre-commit": "validate-branch-name"
+      "pre-commit": "npx validate-branch-name"
     }
   },
   "validate-branch-name": {

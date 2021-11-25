@@ -36,18 +36,12 @@ Description here.
 ## 安装
 
 
-```shell
+```bash
+# 项目本地安装
+$ npm i validate-branch-name -D
 
-npx validate-branch-name
-
-# test target branch name
-npx validate-branch-name -t test/branch/name
-
-# define regexp to test branch name
-npx validate-branch-name -r regexp -t test/branch/name
-
-# use -h for more usage detail
-npx validate-branch-name -h
+# 全局安装
+$ npm i validate-branch-name -g
 
 ```
 
@@ -57,6 +51,15 @@ npx validate-branch-name -h
 ```shell
 
 npx validate-branch-name
+
+# 测试目标分支名
+npx validate-branch-name -t test/branch/name
+
+# 定义用于校验分支名的正则表达式
+npx validate-branch-name -r regexp -t test/branch/name
+
+# 通过 -h 获取更多帮助信息
+npx validate-branch-name -h
 
 ```
 
@@ -69,7 +72,7 @@ npx validate-branch-name
 {
   "husky": {
     "hooks": {
-      "pre-commit": "validate-branch-name"
+      "pre-commit": "npx validate-branch-name"
     }
   },
   "validate-branch-name": {
