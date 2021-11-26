@@ -25,9 +25,18 @@ describe('config', () => {
       const {
         pattern,
         errorMsg,
-      } = getConf(path.join(__dirname, '/config'), null, true);
-      assert.equal(pattern, 'mock pattern', '.*rc pattern error');
-      assert.equal(errorMsg, 'mock errorMsg', '.*rc errorMsg error');
+      } = getConf(path.join(__dirname, '/common_config'));
+      assert.equal(pattern, 'common pattern', '.*rc common pattern error');
+      assert.equal(errorMsg, 'common errorMsg', '.*rc common errorMsg error');
+    });
+
+    it('shoud get cjs config from .validate-branch-namerc.cjs file', () => {
+      const {
+        pattern,
+        errorMsg,
+      } = getConf(path.join(__dirname, '/cjs_config'));
+      assert.equal(pattern, 'cjs pattern', '.*rc cjs pattern error');
+      assert.equal(errorMsg, 'cjs errorMsg', '.*rc cjs errorMsg error');
     });
 
     it('shoud get config from default file', () => {
