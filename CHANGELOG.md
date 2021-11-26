@@ -1,3 +1,13 @@
+# [1.2.0](https://github.com/JsonMa/validate-branch-name/compare/v1.1.1...v1.2.0) (2021-11-26)
+
+
+### Features
+
+* :bookmark: release v1.1.1 ([175b7a2](https://github.com/JsonMa/validate-branch-name/commit/175b7a228c3c4c91872804aa8efa5c36e5053b03))
+* :sparkles: support.cjs config file ([d5afb5f](https://github.com/JsonMa/validate-branch-name/commit/d5afb5fadf72a753db8a9181075e70d0cbfef310))
+
+
+
 ## [1.1.1](https://github.com/JsonMa/validate-branch-name/compare/v1.1.0...v1.1.1) (2021-11-25)
 
 
