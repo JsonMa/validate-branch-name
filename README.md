@@ -114,7 +114,10 @@ npx validate-branch-name
 
 - custom patterns, visit [regex](https://extendsclass.com/regex/a3fe16a).
 
-**You can also use `.validate-branch-namerc`, `.validate-branch-namerc.json` or `.validate-branch-namerc.js` file to define config.**
+**You can also use `.validate-branch-namerc`, `.validate-branch-namerc.json`, `.validate-branch-namerc.yaml`, `.validate-branch-namerc.yml`, `.validate-branch-namerc.js`, `.validate-branch-namerc.cjs`, 
+`validate-branch-name.config.js` or `validate-branch-name.config.cjs` file to define config.**
+
+  
 
 
 ## Questions & Suggestions

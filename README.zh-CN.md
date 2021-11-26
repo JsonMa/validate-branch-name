@@ -110,7 +110,8 @@ npx validate-branch-name
 
 - 自定义正则表达式，访问[regex](https://extendsclass.com/regex/a3fe16a)。
 
-**除了在package.json中定义，还能以文件 `.validate-branch-namerc`、`.validate-branch-namerc.json` 或 `.validate-branch-name.js` 的形式配置validate-branch-name。**
+**除了在package.json中定义，还能以文件 `.validate-branch-namerc`，`.validate-branch-namerc.json`，`.validate-branch-namerc.yaml`，`.validate-branch-namerc.yml`， `.validate-branch-namerc.js`， `.validate-branch-namerc.cjs`，
+`validate-branch-name.config.js` 或 `validate-branch-name.config.cjs`的形式配置validate-branch-name。**
 
 
 ## 疑问及建议
