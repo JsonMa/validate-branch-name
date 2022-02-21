@@ -77,7 +77,7 @@ Configure hooks and pattern using package.json.
     }
   },
   "validate-branch-name": {
-    "pattern": "^(master|develop){1}$|^(feature|fix|hotfix|release)\/.+$",
+    "pattern": "^(master|main|develop){1}$|^(feature|fix|hotfix|release)\/.+$",
     "errorMsg": "your own error message"
   }
 }
@@ -92,7 +92,7 @@ Define [pre-commit](https://github.com/JsonMa/validate-branch-name/blob/master/e
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-# valite branch name before commit
+# validate branch name before commit
 
 npx validate-branch-name 
 
@@ -100,7 +100,7 @@ npx validate-branch-name
 
 **We have set pattern and errorMsg by default, but you can still defined them as you like.**
 
-**Default pattern: ^(master|develop){1}$|^(feature|fix|hotfix|release)\/.+$**
+**Default pattern: ^(master|main|develop){1}$|^(feature|fix|hotfix|release)\/.+$**
 
 **Example:** `feature/test/pattern-test` would be passed.
 

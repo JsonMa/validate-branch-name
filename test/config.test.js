@@ -15,7 +15,7 @@ describe('config', () => {
         pattern,
         errorMsg,
       } = require('../config/config.default');
-      assert.equal(pattern, '^(master|develop){1}$|^(feature|fix|hotfix|release)\/.+$', 'default pattern error');
+      assert.equal(pattern, '^(master|main|develop){1}$|^(feature|fix|hotfix|release)\/.+$', 'default pattern error');
       assert.equal(errorMsg, 'Branch name validate failed please rename your current branch', 'default errMsg error');
     });
   });
@@ -44,7 +44,7 @@ describe('config', () => {
         pattern,
         errorMsg,
       } = getConf();
-      assert.equal(pattern, '^(master|develop){1}$|^(feature|fix|hotfix|release)\/.+$', 'default pattern error');
+      assert.equal(pattern, '^(master|main|develop){1}$|^(feature|fix|hotfix|release)\/.+$', 'default pattern error');
       assert.equal(errorMsg, 'Branch name validate failed please rename your current branch', 'default errorMsg error');
     });
   });
