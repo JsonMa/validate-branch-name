@@ -76,7 +76,7 @@ npx validate-branch-name -h
     }
   },
   "validate-branch-name": {
-    "pattern": "^(master|develop){1}$|^(feature|fix|hotfix|release)\/.+$",
+    "pattern": "^(master|main|develop){1}$|^(feature|fix|hotfix|release)\/.+$",
     "errorMsg": "自定义的错误信息"
   }
 }
@@ -96,7 +96,7 @@ npx validate-branch-name
 ```
 **我们已经为您添加了默认的配置，但是您依然可以根据自己的喜好自定义校验规则和错误信息。**
 
-**默认的校验规则: ^(master|develop){1}$ |^(feature|fix|hotfix|release)\/.+$**
+**默认的校验规则: ^(master|main|develop){1}$ |^(feature|fix|hotfix|release)\/.+$**
 
 **例子:** 分支名`feature/test/pattern-test`将会通过校验 .
 
