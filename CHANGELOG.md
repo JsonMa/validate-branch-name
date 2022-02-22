@@ -1,3 +1,21 @@
+# [1.3.0](https://github.com/JsonMa/validate-branch-name/compare/v1.2.1...v1.3.0) (2022-02-22)
+
+
+### Features
+
+* add main to detfault config ([9d58f00](https://github.com/JsonMa/validate-branch-name/commit/9d58f00524157aa716cf4b2522d8efda3dea9f69))
+
+
+
+## [1.2.1](https://github.com/JsonMa/validate-branch-name/compare/v1.2.0...v1.2.1) (2021-11-30)
+
+
+### Features
+
+* :bookmark: release v1.2.1 ([ee547af](https://github.com/JsonMa/validate-branch-name/commit/ee547af576f7891f7cef7f970f8a6cac5ce6623c))
+
+
+
 # [1.2.0](https://github.com/JsonMa/validate-branch-name/compare/v1.1.1...v1.2.0) (2021-11-26)
 
 
