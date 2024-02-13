@@ -23,7 +23,7 @@ const options = program.opts();
 const branch = options.test || currentBranchName;
 
 // validate whether it is a git repository
-if (!options.branch && !currentBranchName) {
+if (!branch) {
   console.error('\x1b[31m%s\x1b[0m', 'Error: not a git repository\n');
   process.exitCode = FAILED_CODE;
   return;
