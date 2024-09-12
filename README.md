@@ -104,7 +104,7 @@ npx validate-branch-name
 
 **Example:** `feature/test/pattern-test` would be passed.
 
-**Avaliable patterns:**
+**Available patterns:**
 
 - ^(feature|fix|hotfix|release)\/.+ - branch has to start with _feature/, fix/, release/ or hotfix/_
 
