@@ -85,7 +85,7 @@ Configure hooks and pattern using package.json.
 
 **Second way:**
 
-Define [pre-commit](https://github.com/JsonMa/validate-branch-name/blob/master/example/pre-commit) file under `.husky` direcotory.
+Define [pre-commit](https://github.com/JsonMa/validate-branch-name/blob/master/example/pre-commit) file under `.husky` directory.
 
 ```shell
 
