@@ -1,0 +1,13 @@
+---
+version: 2
+updates:
+  # Daily: Check minor and patch updates
+  - package-ecosystem: "npm"
+    directory: "/"
+    open-pull-requests-limit: 10
+    schedule:
+      interval: "daily"
+      time: "02:00"
+      timezone: "Asia/Shanghai"
+    # https://github.com/dependabot/dependabot-core/issues/5226#issuecomment-1179434437
+    versioning-strategy: increase
