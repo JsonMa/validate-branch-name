@@ -2,13 +2,13 @@
 
 'use strict';
 
-const branchName = require('current-git-branch');
+const GitInfo = require('git-local-info');
 const { Command, Option } = require('commander');
 const path = require('path');
 const {
   validateBranchName,
 } = require('./lib/validateBranchName');
-const currentBranchName = branchName();
+const currentBranchName = new GitInfo().getGitInfo.branch;
 const SUCCESS_CODE = 0;
 const FAILED_CODE = 1;
 const pkgJson = require(path.join(__dirname, './package.json'));
