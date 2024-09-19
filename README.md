@@ -85,7 +85,7 @@ Configure hooks and pattern using package.json.
 
 **Second way:**
 
-Define [pre-commit](https://github.com/JsonMa/validate-branch-name/blob/master/example/pre-commit) file under `.husky` direcotory.
+Define [pre-commit](https://github.com/JsonMa/validate-branch-name/blob/master/example/pre-commit) file under `.husky` directory.
 
 ```shell
 
@@ -104,7 +104,7 @@ npx validate-branch-name
 
 **Example:** `feature/test/pattern-test` would be passed.
 
-**Avaliable patterns:**
+**Available patterns:**
 
 - ^(feature|fix|hotfix|release)\/.+ - branch has to start with _feature/, fix/, release/ or hotfix/_
 
